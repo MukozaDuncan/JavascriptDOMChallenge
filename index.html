@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="https://kit.fontawesome.com/e8ea4fddab.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+
+        <title>Task Management</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="footer.css">
+    </head>
+    <body>
+        <div id="main-container">
+            <div class="banner">
+                <div>
+                    <h1>Hello.</h1>
+                    <img src="images/management.png" height="100px"/>
+                    <h2>Manage your tasks here.</h2>
+                    <input class="enterTask" type="text" placeholder="Enter your task here...">
+                </div>
+            </div>
+
+            <section id="my-tasks" class="my-tasks">
+                <div class="pending">
+                    <p>
+                        <strong class="sectiontitle">Pending</strong><br/>
+                        Here are the tasks that you are yet to complete.
+                    </p>
+                    <ul class="task-list">
+                        <li>
+                            Compose the UI.
+                            <i class="fa fa-trash taskicon" aria-hidden="true"></i> <i class="fa fa-check-circle taskicon" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            Implement the functionality.
+                            <i class="fa fa-trash taskicon" aria-hidden="true"></i> <i class="fa fa-check-circle taskicon" aria-hidden="true"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="done">
+                    <p>
+                        <strong class="sectiontitle">Completed</strong><br/>
+                        Here are the tasks that you have already completed.
+                    </p>
+                    <ul class="task-list">
+                        <li>
+                            Organize a meeting.
+                            <i class="fa fa-trash taskicon" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            Create a Trello-Kanban Board.
+                            <i class="fa fa-trash taskicon" aria-hidden="true"></i>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- <section id="my-projects" class="my-projects">
+                <p>
+                    <strong class="sectiontitle">Completed Tasks</strong><br/>
+                    Here are the tasks that you have already completed.
+                </p>
+                <div class="projectinfo">
+                    <div class="projectitem">
+                        <div class="image">
+                            <img src="./images/projects/blog.jpg" alt="Personal blog project.">
+                            <div class="fade"></div>
+                        </div>
+                        <hr/>
+                        <p class="projecttitle">
+                            Personal Blog<br/>
+                            (Hashnode)
+                        </p>
+                        <button class="project-button"><a target="_blank" href="https://mukozaduncan.hashnode.dev/what-led-me-to-the-field-of-software">View Project</a></button>
+                    </div>
+                    <div class="projectitem">
+                        <div class="image">
+                            <img src="./images/projects/survey.png" alt="Survey form project.">
+                            <div class="fade"></div>
+                        </div>
+                        <hr/>
+                        <p class="projecttitle">
+                            Survey Form<br/>
+                            (HTML, CSS and Git)
+                        </p>
+                        <button class="project-button"><a target="_blank" href="https://cocky-morse-482ca8.netlify.app/">View Project</a></button>
+                    </div>
+                    <div class="projectitem">
+                        <div class="image">
+                            <img src="./images/projects/portfolio.jpg" alt="Personal portfolio project.">
+                            <div class="fade"></div>
+                        </div>
+                        <hr/>
+                        <p class="projecttitle">
+                            Portfolio Website<br/>
+                            (Capstone Project HTML, CSS and Git)
+                        </p>
+                        <button class="project-button"><a target="_blank" href="https://flamboyant-swirles-27980b.netlify.app/">View Project</a></button>
+                    </div>
+                </div>
+            </section> -->
+        </div>
+    </body>
+</html>
