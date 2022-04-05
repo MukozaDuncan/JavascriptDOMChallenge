@@ -29,6 +29,18 @@ function addTask(){
     let newTask = newActivity.value;
     let listElement = document.createElement('li');
     listElement.innerText = newTask;
+    let trashIconElement = document.createElement('i');
+    trashIconElement.classList.add('fa');
+    trashIconElement.classList.add('fa-trash');
+    trashIconElement.classList.add('taskicon');
+
+    let checkIconElement = document.createElement('i');
+    checkIconElement.classList.add('fa');
+    checkIconElement.classList.add('fa-check-circle');
+    checkIconElement.classList.add('taskicon');
+
+    listElement.appendChild(trashIconElement);
+    listElement.appendChild(checkIconElement);
     pendingActivityContainer.appendChild(listElement);
     newActivity.value = "";
     addToLocalStorage(newTask);
