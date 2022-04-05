@@ -7,6 +7,19 @@ if(toDos){
         let listElement = document.createElement('li');
         listElement.innerText = item;
         listElement.id = index;
+
+        let trashIconElement = document.createElement('i');
+        trashIconElement.classList.add('fa');
+        trashIconElement.classList.add('fa-trash');
+        trashIconElement.classList.add('taskicon');
+
+        let checkIconElement = document.createElement('i');
+        checkIconElement.classList.add('fa');
+        checkIconElement.classList.add('fa-check-circle');
+        checkIconElement.classList.add('taskicon');
+
+        listElement.appendChild(trashIconElement);
+        listElement.appendChild(checkIconElement);
         return listElement;
     });
     pendingActivityContainer.append(...toDoNodeList);
